@@ -98,6 +98,23 @@ export function ContactSection() {
               </a>
 
               <div
+                className={`transition-all duration-700 ${
+                  isVisible ? "translate-x-0 opacity-100" : "-translate-x-16 opacity-0"
+                }`}
+                style={{ transitionDelay: "470ms" }}
+              >
+                <a
+                  href="https://wa.me/79192448669"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-foreground/20 bg-foreground/10 px-5 py-2.5 font-mono text-sm text-foreground backdrop-blur-md transition-all hover:bg-foreground/20 hover:scale-105"
+                >
+                  <span>💬</span>
+                  Написать в WhatsApp
+                </a>
+              </div>
+
+              <div
                 className={`flex gap-2 pt-2 transition-all duration-700 md:pt-4 ${
                   isVisible ? "translate-x-0 opacity-100" : "-translate-x-8 opacity-0"
                 }`}
